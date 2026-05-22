@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Creations - Thumbnail Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar fade-in">
+    <div class="logo">
+      <span class="logo-box">AC</span> Aditya Creations
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero-stage">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-outline">Order Now</a>
+  </nav>
+
+  <section class="hero-stage" id="hero-stage">
+        <div class="hero-vignette"></div>
+
+        <div class="hero-overlay">
+            <h1 class="main-title">
+                <span class="white-text">High-Clickrate</span>
+                <span class="green-text">Visuals</span>
+            </h1>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h2>20+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>250+</h2>
+                    <p>Designs Made</p>
+                </div>
+                <div class="stat-item">
+                    <h2>3 Years</h2>
+                    <p>Experience</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="doc 1.webp" alt="Gaming Thumbnail">
+            <img src="doc 2.jpg" alt="Gaming Thumbnail">
+            <img src="doc 3.webp" alt="Gaming Thumbnail">
+            <img src="doc 4.webp" alt="Gaming Thumbnail">
+            <img src="doc 5.webp" alt="Gaming Thumbnail">
+            <img src="doc 6.webp" alt="Gaming Thumbnail">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container reverse">
+            <img src="doc 2.jpg" alt="Gaming Thumbnail">
+            <img src="doc 13.webp" alt="Gaming Thumbnail">
+            <img src="doc 4.webp" alt="Gaming Thumbnail">
+            <img src="doc 5.webp" alt="Gaming Thumbnail">
+            <img src="doc 6.webp" alt="Gaming Thumbnail">
+            <img src="doc 1.webp" alt="Gaming Thumbnail">
+        </div>
+    </section>
+
+
+  <section id="about" class="about section">
+    <div class="about-text scroll-anim">
+      <p class="section-label">ABOUT ME</p>
+      <h2>Crafting Thumbnails That <span class="text-glow">Convert Clicks</span></h2>
+      <p>Hey, I'm <strong>Aditya Creations</strong> — a passionate YouTube Thumbnail Designer with over 3 years of experience helping content creators and brands stand out in the feed. I've designed <span class="text-glow-small">500+ thumbnails</span> across various niches.</p>
+      <p>My approach combines bold color theory, strategic text placement, and emotional hooks that stop the scroll. With <span class="text-glow-small">20+ happy clients</span>, I'm committed to delivering pixel-perfect designs.</p>
+    </div>
+    <div class="about-stats scroll-anim delay-1">
+      <div class="stat-card outline-green">
+        <h3>3+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card outline-green">
+        <h3 class="text-glow-small">500+</h3>
+        <p>Thumbnails Created</p>
+      </div>
+      <div class="stat-card outline-green">
+        <h3 class="text-glow-small">20+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card outline-green">
+        <h3>100%</h3>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="portfolio-section">
+    <div class="section-header">
+        <h2>Featured Work</h2>
+    </div>
+
+        <div class="yt-grid">
+        <div class="yt-card">
+            <div class="thumb-wrapper">
+                <img src="doc 1.webp" alt="Thumbnail" class="yt-thumb">
+                <span class="yt-duration">10:56</span>
+            </div>
+            <div class="yt-info">
+                <img src="data:image/jpeg;base64,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" alt="Avatar" class="yt-avatar">
+                <div class="yt-text">
+                    <h3>Operation Sindoor: The Untold Story</h3>
+                    <p class="yt-channel">Finding Out Now</p>
+                    <p class="yt-stats">3.7M views &bull; 11 months ago</p>
+                </div>
+                <div class="yt-menu">&#8942;</div>
+            </div>
+        </div>
+        
+        <div class="yt-card">
+            <div class="thumb-wrapper">
+                <img src="finance1.webp" alt="Thumbnail" class="yt-thumb">
+                <span class="yt-duration">08:22</span>
+            </div>
+            <div class="yt-info">
+                <img src="https://yt3.googleusercontent.com/AN8nkkKwTCcd9cY3UebEgkA07hA3kC9FT_vbTMW0GoOgg-PbbKJoc4rYr11LqqJ1ux3E09KtCA=s160-c-k-c0x00ffffff-no-rj" alt="Avatar" class="yt-avatar">
+                <div class="yt-text">
+                    <h3>Easiest Way To Start Dropshipping in 2026</h3>
+                    <p class="yt-channel">Jordan Bown</p>
+                    <p class="yt-stats">388K views &bull; 1 year ago</p>
+                </div>
+                <div class="yt-menu">&#8942;</div>
+            </div>
+        </div>
+
+        <div class="yt-card">
+            <div class="thumb-wrapper">
+                <img src="growth.jpg" alt="Thumbnail" class="yt-thumb">
+                <span class="yt-duration">12:56</span>
+            </div>
+            <div class="yt-info">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIwAoAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYCAwQBBwj/xABBEAABAwICBwMHCAoDAAAAAAABAAIDBBEFEgYTITFBUZFSYXEUIjJigZLBFUJUoaKx0fAHFiQzQ1NygtLhI4Px/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAMEBQIB/8QAJREBAAIBAgUEAwAAAAAAAAAAAAECAwURBBQxUaESITRhMjNS/9oADAMBAAIRAxEAPwC1oiICIiAiIgIiW2277ICr2kullFgL2xFjqisJDjCx+XI3tOPDu7+5VvSvTWq8smoMKeIYoXFj6gC7nEGxy8AN4vvPMKjzuc7M9znPe43JcbknmTxPfx7kH2PR/STD8dzMpCYqhou+nksHD1ha9x4Ka427rr4Ix74nMkie6ORhux7DZzDzaeB8F9T0D0gmxijkgrpQ+spiLvtYvYdgce+++yC0IiICIiAiIgIiICIiAiIgIiICr2mmOjBsJIgePLKm7IRxYOL/AAHDvsrASGi5NhzXxHHsT+VsXqq4kuZK86q+yzBsb4bNpHMnnsCPuGsytaT4ncsXSNabXuVkC124rnl9MoN0cgdvKldH8Ufg2LU9aLmNpyzDtMO8fcfEBQQOXcuphDwDfbxCD77E9srGPjcHMe0OaRxBFx9RWSqf6N691VgJppDd1HLq23O0sIDh0u5o7mhWxAREQEREBERAREQEREBESyCu6d4n8naPTRtflnqrwR237RZ59jb27yF8hLMzgTuA3BfQ/wBLFLJJhdNWU7wX0z3NezML5XW227sgHtXyZ1RM/wDiO6oJgNA3LU9jC64e3qocvJ3m68uglPM/nRdVnE+Ju+ZnvBRCIPpH6NsQ8nx802caqsiLB/W3aPqzdV9UX550ZfUR4/hpp82fymMgDZfaL/Uv0KPOF27fBB6iIgIiICIiAiIgIixe9rGOe42a0XJ5BBorayGijDpyRtsGt2lygKvFKqp2NfqI+yzf7y5qiokqqgzynaTsb2RyC56iUxDO0XF7IMpGMDXGQZhxzed49VR9KdGDSl1bhrS6A7XxjezvHMK5VMoMLbH0tq3TSiJty3ZfaEHxqxXis+J4UcVxeuOEwsDIBdwvYOd3d5292xVt8b43uZIxzXN3tcLEIMFkxjnuDWNLnE2AG8lI43yPayNpc9xsGtFySrhobh8DJZa6qN56d+rbF2Tbf8AglNGdH2YZEKusAdVObwOyJvEDv5npxvZoKiekN6Z+Xmw7Wn2LmlOalcd12LFtRlpc+87vaguOHV0ddDmaMsjfSbyXWqbQ1UlNJHVN3geeObeX54q2U9VBUtzQSB47t/RBuREQEREBERAVa0jxYmpbhtO6wd+9cOPq+HNS2L1hpKW7f3shLWePNVCpozK9sjHlsjfnHj+TtQdVtl1orBeC4va4UFJpPI1zmNoQ7JsLs+889y1zaSzSMy+RAf8AYf8AFBKFxcGg7m3W7FKkQ4W+oPzW5h45fxVd+W5Pog9//S012KzVVE+m1JY1wtvJ7/ggkNDW6ikL37XVL7lx33Byj49VLYlhOH1rHPqqRjpLXzgZXdRYnqq1SYq+np4oBTEiNtgc3JdztJpnNINENo/mH/FBJ4XguHUGSopqYMm1YJe5zjbw27FBYc5sOP4nCB5shMg63t9tb/1jmEDYhRjY0C+sPL+lRorX/KhrtQQ4syll9+zn0QXOR1qMX4tAC5C45MnC91CHHZTYGlNhwz/6Xny3J9EHv/6QWtrhHSNkduawH6lso5pKTJUs2PY3zhuBHEFVZ2kkro2xuoAWtt/FO0+6to0qeCDJQnJxc2TaB7qD6tE8SMa9hu14uD3LNV7CcWMLYqeotqg2zHge0XVh42QEREBEWL3NY0ucbNG8lBWNIa+E4s2nMg8xgbf1jt+63Rci1VzKarr5ycshdKXNI370p4jDZl88fDNvCCnyMMVbVMda7Z3jZyvsRdGKs1eM1QOwOyPHtaPiCudAXi9Uhg1NHUzOMzbtZttwvzXNrRWN5S4cVst4pXqjrhMzeY6q3tijG6Ng9iyABNrC/JV54mOzVjR7f34U7M3mOq96q4bL2tt8FiY4+w3onMx2J0e3T1eFR37kUtjdHHCxs0LQ25yuA3FRKsUtFo3hl58NsN/RYWudmsY2ME/8jms6lbFso263EaKM8Zg4/wBtz8F0hXEgO9Ii3EKfwCsM0DqeQ3fCNh7TeHRVyQTfw3M3289p/FaoMTqaCqZK6JrHN2Zmm7XDl4IL6i00tQ2ppY6iL0JG5rLcgWPJVzTKqmhpoYIrgSXzW49y8/XCj+jVP2fxXLiOkGHV8IilpqkFpzMeMt2ke3wQclJAIYcthmO1xO8nndYmozVOoj2vtd3IDktdPXQzOyg2PLcsqaHVvfKT57i77xZBBaRMyYsx3B8FvaHEfFcCltJ2WfRS7Nhe0m/MA/BRKAprR4f8dQeOZvxUKpnR03FQ3jdv3KLP+uV/TfkwmFatA8Lo8VdiVPXwiRjY4iOGUnNtby3KqKZ0bx44D5Y+KDWyzMY2ME2a2xdv48fb3KnjmIt7t/i6XthtWnV3aR6HVGERvqqeZtRSN2nO4Newd/P2W8FWV2Ypilbis2txCcykHzGjYxn9I+O/vK4lzeYm3s64auStNss7y4MeH7ETykFuhVeU/jxtQgHeXgBQCucP+DB1X5AuvBW58ZhHGKJz/uHxXIpLRpodiFTJxZE1vW5+CnZqZiqbTOp5/THou5hdL2NcCHtFjvUTihLqoZdjg0XtzW+CvDYP2kgOHHmguOjbHR4TEN4Dn5b8rqTseSqtJpXRwUsMPks5LGAE+bv681u/XCj+jVP2fxQUxeONhcr1Yyeg5Bzcb3I5W3hdUGITxfOzeK5UQbMYrjV0sQe0t1cocDfxHxXIvatt6d4HAX+tatfEPnhBsXTQVbqOXMPOa4WcOf5suLXxdsJr4u2F5MRMbS7peaWi0LI3G6U72SN/tCyGMUnad7irOvi7YXmui7YUPL1X41TPHZZji1H/ADHe4vHYzSjdrXeDQFWtdF2wvdfF2wnL0ezq3EfSQxKvNY9gDMsbdtuN7b1xrXr4u2E18XbCmrEVjaFDJltltNrT1bF14PXeSMqSyO7nPDb+A/8AVwa+LtfUtlFtp83FziV6jdstTJI8vLtvcsI2ax1ze2+xWA842C6mty7kHoREQF48XaQF6iDkReleIPHjMCDuIKjXU47R6KScuIoNOo9Y9E1HrHotyINOo9Y9E1HrHotyINOo9Y9E1HrHotyINOo9Y9E1HrHotyINIpx2vsqSjZkjDWrjC7gg2Qt86/Bb1hD6CzQEREH/2Q==" alt="Avatar" class="yt-avatar">
+                <div class="yt-text">
+                    <h3>Struggling to Manage YouTube with Studies? WATCH THIS!</h3>
+                    <p class="yt-channel">DecodingYT</p>
+                    <p class="yt-stats">294K views &bull; 8 months ago</p>
+                </div>
+                <div class="yt-menu">&#8942;</div>
+            </div>
+        </div>
+
+        <div class="yt-card">
+            <div class="thumb-wrapper">
+                <img src="gaming8.jpg" alt="Thumbnail" class="yt-thumb">
+                <span class="yt-duration">11:45</span>
+            </div>
+            <div class="yt-info">
+                <img src="data:image/png;base64,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" alt="Avatar" class="yt-avatar">
+                <div class="yt-text">
+                    <h3>Surviving 100 Days in Hardcore</h3>
+                    <p class="yt-channel">Adarshz</p>
+                    <p class="yt-stats">2.2M views &bull; 1 year ago</p>
+                </div>
+                <div class="yt-menu">&#8942;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="#" class="view-all-btn">View All Designs</a>
+    </div>
+  </section>
+
+  <section id="stats" class="stats-section">
+    <h2 class="proven-title reveal-up">Proven by <span>Numbers</span></h2>
+    <br>
+    
+    <div class="bento-grid">
+        <div class="stat-card card-1 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">200+</h3>
+            <p class="stat-label">Designs Made</p>
+        </div>
+
+        <div class="stat-card card-2 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">3 Yrs</h3>
+            <p class="stat-label">Experience</p>
+        </div>
+
+        <div class="stat-card card-3 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">20+</h3>
+            <p class="stat-label">Happy Customers</p>
+        </div>
+
+        <div class="stat-card card-4 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">Best Value</h3>
+            <p class="stat-label">Premium Quality <br> Lowest Price</p>
+        </div>
+
+        <div class="stat-card card-5 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">24 Hrs</h3>
+            <p class="stat-label">Turnaround</p>
+        </div>
+
+        <div class="stat-card card-6 reveal-up">
+            <div class="glow"></div>
+            <h3 class="stat-num">86.7%</h3>
+            <p class="stat-label">Success Rate</p>
+        </div>
+    </div>
+</section>
+
+<section class="feedback-section" id="reviews">
+    <div class="feedback-header">
+        <span>/ WHAT CLIENTS SAY</span>
+        <h1>Real-Time <span>Feedback</span></h1>
+    </div>
+
+    <div class="feedback-container">
+        <!-- LEFT SIDE: STATS & POPUP TRIGGER -->
+        <div class="feedback-sidebar">
+            <div class="stat-box">
+                <h2 class="rating-number">5.0</h2>
+                <p>Average Rating</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>2 Total Reviews</p>
+            </div>
+
+            <div class="leave-review-box">
+                <h3>Leave a Review</h3>
+                <br>
+                <button class="submit-review-btn" data-tally-open="KYWx47" data-tally-layout="modal" data-tally-width="500" data-tally-hide-title="1" data-tally-emoji-text="❤️" data-tally-emoji-animation="tada" data-tally-auto-close="1000">Click me</button>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: MANUAL REVIEWS (2 PER LINE) -->
+        <div class="reviews-grid">
+            <!-- Review Card 1 -->
+            <div class="review-card">
+                <div class="reviewer-meta">
+                    <div>
+                        <h4>Mattu Daksh</h4>
+                        <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p>"The animations on this portfolio are top-tier. Highly recommended!"</p>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-card">
+                <div class="reviewer-meta">
+                    <div>
+                        <h4>Anjali Joshi Arts
+                        </h4>
+                        <div class="card-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p>"Love the clean layout and the way the reviews are displayed. Great job!"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="particles">
+        <span class="p1"></span><span class="p2"></span><span class="p3"></span>
+    </div>
+
+    <div class="contact-header">
+        <span>/ GET IN TOUCH</span>
+        <h1>Let's Work <span>Together</span></h1>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info-card op-card">
+            <div class="info-item">
+                <p class="label">Available Now</p>
+                <h3>Aditya Singh Rajput</h3>
+                <p class="role">YouTube Thumbnail Designer</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:mkaditya36@gmail.com" class="contact-link">mkaditya36@gmail.com</a>
+                <a href="tel:+919988474736" class="contact-link">+91 9988474736</a>
+            </div>
+
+            <div class="social-pills">
+                <a href="https://x.com/AdityaSing53792" target="_blank" class="pill">Twitter</a>
+                <a href="https://www.instagram.com/itz_blaze.official/" target="_blank" class="pill">Instagram</a>
+            </div>
+    </div>
+</section>
+
+<footer class="portfolio-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="footer-logo">Aditya<span>CREATIONS</span></h2>
+            <p class="footer-tagline">High-converting YouTube thumbnail designs that command clicks.</p>
+            <div class="footer-status">
+                <span class="status-dot"></span> Available for Freelance Project Work
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#hero-stage">Home</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#reviews">Testimonials</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <h3>Let's Connect</h3>
+            <div class="footer-socials">
+                <a href="https://x.com/AdityaSing53792" target="_blank" class="social-icon">X</a>
+                <a href="https://www.instagram.com/itz_blaze.official/" target="_blank" class="social-icon">IG</a>
+                <a href="https://discord.gg/953015086333714432" target="_blank" class="social-icon">DC</a>
+            </div>
+            <p class="copyright">&copy; 2026 Aditya Singh Rajput. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+  <a href="#contact" class="floating-cta">Available 🟢 - Let's Talk </a>
+
+  <script src="script.js"></script>
+
+  <!-- TALLY EMBED SCRIPT (Place this at the very bottom of your body) -->
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+</body>
+</html>
